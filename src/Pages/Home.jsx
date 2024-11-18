@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const { user, loading, error } = useSelector((state) => state.user);
 
   useEffect(() => {

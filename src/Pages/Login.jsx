@@ -12,7 +12,9 @@ const Login = () => {
   const userCredentials = { email, password };
   const navigate = useNavigate();
 
-  const { loading, error } = useSelector((state) => state.user);
+  const { isAuthenticated, loading, error } = useSelector(
+    (state) => state.user
+  );
 
   const handleLogin = (e) => {
     e.preventDefault();
